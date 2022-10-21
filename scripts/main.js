@@ -54,3 +54,19 @@ window.addEventListener("resize", () => {
     }
   }
 });
+
+const arrow = document.querySelector('.arrow');
+
+if (arrow) {
+  arrow.addEventListener('click', () => {
+    const visibleSection = document.querySelector('.section.is-visible');
+    const nextSection = visibleSection ? visibleSection.nextElementSibling : undefined;
+
+    if (nextSection) {
+      const href = nextSection.id;
+      const link = document.querySelector(`a[href="#${href}"`);
+
+      link && link.click();
+    }
+  });
+}

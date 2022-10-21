@@ -314,6 +314,13 @@ h2.title::after {
   display: none !important;
 }
 
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 2100px) {
   .section-3 .content-image {
     position: absolute;
@@ -435,6 +442,10 @@ h2.title::after {
   .video__content .video-wrapper {
     top: 0;
     transform: translateY(0);
+  }
+
+  .arrow {
+    display: none;
   }
 }
 

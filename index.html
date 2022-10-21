@@ -17,6 +17,7 @@
         </div>
         <nav class="sidebar-nav">
             <a href="#lero-karta" class="sidebar-link">Lero-Karta</a>
+            <a href="#video" class="sidebar-link" style="display: none;"></a>
             <a href="#experience" class="sidebar-link">Наш опыт</a>
             <a href="#world" class="sidebar-link">Окружающая среда</a>
             <a href="#works" class="sidebar-link">План работ</a>
@@ -47,16 +48,11 @@
                 <a href="#video" class="section-btn">Узнать подробнее</a>
             </div>
         </section>
-        <div class="section">
-            <div class="video__content" id="video">
-                <div class="video-wrapper" style="padding:56.25% 0 0 0;position:relative;"><iframe
-                        src="https://player.vimeo.com/video/762246554?h=cf21630457" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                        title="Lefa&amp;#039;s Underground Mining Project.mp4"></iframe></div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
+        <section class="section" id="video">
+            <div class="video__content" data-content>
+                <div class="video-wrapper" style="padding:56.25% 0 0 0;position:relative;"><iframe src="./video.mp4" frameborder="0" autoplay allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lefa&amp;#039;s Underground Mining Project.mp4"></iframe></div>
             </div>
-        </div>
+        </section>
         <section class="section section-2" id="experience">
             <div class="section__content" data-content>
                 <h2 class="title">Наш опыт</h2>
@@ -177,6 +173,9 @@
             </div>
         </section>
     </main>
+    <div class="arrow">
+        <img src="./images/arrow.png" alt="arrow">
+    </div>
     <script src="./scripts/main.js"></script>
 </body>
 
